@@ -32,7 +32,7 @@ export class CarComponent implements OnInit {
     }
 
     deleteOpt(option){
-      for(let i = 0; i < this.options.lenght; i++) {
+      for(let i = 0; i < this.options.length; i++) {
       if(this.options[i] == option)
       this.options.splice(i,1);
       }
