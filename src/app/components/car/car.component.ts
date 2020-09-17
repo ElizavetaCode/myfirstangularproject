@@ -12,6 +12,7 @@ export class CarComponent implements OnInit {
   colors:Colors;
   options:string[];
   test:any;
+  isEdit:boolean = false;
 
   constructor() { }
 
@@ -26,6 +27,11 @@ export class CarComponent implements OnInit {
     };
     this.options = ["ABS", "Автопилот", "Авто Паркинг"];
 }
+
+    showEdit(){
+      this.isEdit = !this.isEdit;
+    }
+
     addOpt(option){
       this.options.unshift(option);
       return false;
