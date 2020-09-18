@@ -6,17 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarComponent } from './components/car/car.component';
 import { KontaktiComponent } from './components/kontakti/kontakti.component';
+import { LkComponent } from './components/lk/lk.component';
 
 const appRoutes: Routes = [
   {path: '', component:CarComponent},
-  {path: 'about', component:KontaktiComponent}
+  {path: 'about', component:KontaktiComponent},
+  {path: 'lk', component:LkComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     CarComponent,
-    KontaktiComponent
+    KontaktiComponent,
+    LkComponent
   ],
   imports: [
     BrowserModule,
