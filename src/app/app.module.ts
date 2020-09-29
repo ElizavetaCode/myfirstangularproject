@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { CarComponent } from './components/car/car.component';
 import { KontaktiComponent } from './components/kontakti/kontakti.component';
 import { LkComponent } from './components/lk/lk.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
@@ -32,7 +32,6 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     ReactiveFormsModule
     
-
   ],
   providers: [],
   bootstrap: [AppComponent]
