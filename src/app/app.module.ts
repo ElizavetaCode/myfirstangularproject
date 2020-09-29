@@ -9,7 +9,7 @@ import { KontaktiComponent } from './components/kontakti/kontakti.component';
 import { LkComponent } from './components/lk/lk.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ProductAlertsComponent } from './components/product-alert/product-alert.component';
+import { ProductAlertComponent } from './components/product-alert/product-alert.component';
 
 
 const appRoutes: Routes = [
@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     KontaktiComponent,
     LkComponent,
     ProductListComponent,
-    ProductAlertsComponent
+    ProductAlertComponent
   ],
   imports: [
     BrowserModule,
