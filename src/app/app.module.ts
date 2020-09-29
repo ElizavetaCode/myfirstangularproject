@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { CarComponent } from './components/car/car.component';
 import { KontaktiComponent } from './components/kontakti/kontakti.component';
 import { LkComponent } from './components/lk/lk.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const appRoutes: Routes = [
   {path: '', component:CarComponent},
   {path: 'about', component:KontaktiComponent},
   {path: 'lk', component:LkComponent}
+  {path: 'product-list', component:ProductListComponent}
 ]
 
 @NgModule({
@@ -19,13 +21,19 @@ const appRoutes: Routes = [
     AppComponent,
     CarComponent,
     KontaktiComponent,
-    LkComponent
+    LkComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
+    ])
 
   ],
   providers: [],
