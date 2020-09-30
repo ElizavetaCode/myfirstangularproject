@@ -11,6 +11,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductAlertComponent } from './components/product-alert/product-alert.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartComponent } from './components/cart/cart.component';
 
 
 const appRoutes: Routes = [
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   {path: 'lk', component:LkComponent},
   {path: 'product-list', component:ProductListComponent},
   {path: 'products/:productId', component: ProductDetailsComponent},
+  {path: 'cart', component: CartComponent},
 ]
 
 @NgModule({
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     LkComponent,
     ProductListComponent,
     ProductAlertComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
