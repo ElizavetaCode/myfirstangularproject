@@ -12,7 +12,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProductAlertComponent } from './components/product-alert/product-alert.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartComponent } from './components/cart/cart.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './components/shipping/shipping.component';
 
 const appRoutes: Routes = [
   {path: '', component:CarComponent},
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   {path: 'product-list', component:ProductListComponent},
   {path: 'products/:productId', component: ProductDetailsComponent},
   {path: 'cart', component: CartComponent},
+  {path: 'shipping', component: ShippingComponent},
 ]
 
 @NgModule({
@@ -32,10 +34,12 @@ const appRoutes: Routes = [
     ProductListComponent,
     ProductAlertComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
